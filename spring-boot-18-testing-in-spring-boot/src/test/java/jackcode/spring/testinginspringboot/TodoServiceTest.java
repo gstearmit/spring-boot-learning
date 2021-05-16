@@ -1,4 +1,4 @@
-package me.loda.spring.testinginspringboot;
+package jackcode.spring.testinginspringboot;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

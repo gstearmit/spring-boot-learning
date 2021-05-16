@@ -1,4 +1,4 @@
-package me.loda.spring.testinginspringboot;
+package jackcode.spring.testinginspringboot;
 /*******************************************************
  * For Vietnamese readers:
  *    Các bạn thân mến, mình rất vui nếu project này giúp 
@@ -10,6 +10,9 @@ package me.loda.spring.testinginspringboot;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 /**
  * Copyright 2019 {@author Loda} (https://loda.me).
  * This project is licensed under the MIT license.
@@ -17,8 +20,20 @@ import java.util.List;
  * @since 5/26/2019
  * Github: https://github.com/loda-kun
  */
-public interface TodoRepository {
-    List<Todo> findAll();
+@Service
+public class TodoService {
+    @Autowired
+    private TodoRepository todoRepository;
 
-    Todo findById(int id);
+    public int countTodo(){
+        return todoRepository.findAll().size();
+    }
+
+    public Todo getTodo(int id){
+        return todoRepository.findById(id);
+    }
+
+    public List<Todo> getAll(){
+        return todoRepository.findAll();
+    }
 }

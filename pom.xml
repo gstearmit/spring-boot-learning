@@ -15,11 +15,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>spring-boot-learning</name>
   <description>Everything about Spring Boot</description>
-  <url>https://loda.me/</url>
+  <url>#</url>
 
   <organization>
-    <name>loda.me</name>
-    <url>https://loda.me/</url>
+    <name>@Phuchc</name>
+    <url>https://phuc.xyz</url>
   </organization>
 
   <licenses>
@@ -30,23 +30,7 @@
     </license>
   </licenses>
 
-  <developers>
-    <developer>
-      <id>loda</id>
-      <name>Nguyễn Hoàng Nam</name>
-      <email>loda.namnh@gmail.com</email>
-      <url>https://github.com/loda-kun</url>
-      <organization>loda</organization>
-      <organizationUrl>https://loda.me/</organizationUrl>
-      <roles>
-        <role>founder</role>
-      </roles>
-      <properties>
-        <facebook>https://www.facebook.com/nam.tehee</facebook>
-        <linkedin>https://www.linkedin.com/in/loda-nam-hoang/</linkedin>
-      </properties>
-    </developer>
-  </developers>
+
 
   <modules>
     <module>spring-configuration-properties</module>

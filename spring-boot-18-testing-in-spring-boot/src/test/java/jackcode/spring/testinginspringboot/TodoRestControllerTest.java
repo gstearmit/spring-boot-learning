@@ -1,4 +1,4 @@
-package me.loda.spring.testinginspringboot;
+package jackcode.spring.testinginspringboot;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;

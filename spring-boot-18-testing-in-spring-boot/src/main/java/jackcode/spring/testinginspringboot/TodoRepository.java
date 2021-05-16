@@ -1,4 +1,4 @@
-package me.loda.spring.testinginspringboot;
+package jackcode.spring.testinginspringboot;
 /*******************************************************
  * For Vietnamese readers:
  *    Các bạn thân mến, mình rất vui nếu project này giúp 
@@ -8,8 +8,7 @@ package me.loda.spring.testinginspringboot;
  *    Xin cảm ơn!
  *******************************************************/
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.util.List;
 
 /**
  * Copyright 2019 {@author Loda} (https://loda.me).
@@ -18,9 +17,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 5/26/2019
  * Github: https://github.com/loda-kun
  */
-@SpringBootApplication
-public class App {
-    public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
-    }
+public interface TodoRepository {
+    List<Todo> findAll();
+
+    Todo findById(int id);
 }

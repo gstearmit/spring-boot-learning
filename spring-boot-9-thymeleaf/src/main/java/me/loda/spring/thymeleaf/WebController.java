@@ -14,14 +14,14 @@ public class WebController {
     public String profile(Model model){
         // Tạo ra thông tin
         List<Info> profile = new ArrayList<>();
-        profile.add(new Info("fullname", "Nguyễn Hoàng Nam"));
-        profile.add(new Info("nickname", "lốddaf"));
-        profile.add(new Info("gmail", "loda.namnh@gmail.com"));
-        profile.add(new Info("facebook", "https://www.facebook.com/nam.tehee"));
-        profile.add(new Info("website", "https://loda.me"));
+        profile.add(new Info("fullname", "#"));
+        profile.add(new Info("nickname", "#"));
+        profile.add(new Info("gmail", "#"));
+        profile.add(new Info("facebook", "#"));
+        profile.add(new Info("website", "#"));
 
         // Đưa thông tin vào Model
-        model.addAttribute("lodaProfile", profile);
+        model.addAttribute("Profile", profile);
 
         // TRả về template profile.html
         return "profile";

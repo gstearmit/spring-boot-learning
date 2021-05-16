@@ -1,4 +1,4 @@
-package me.loda.spring.testinginspringboot;
+package jackcode.spring.testinginspringboot;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

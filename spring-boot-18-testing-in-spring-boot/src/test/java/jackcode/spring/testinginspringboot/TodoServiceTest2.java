@@ -1,4 +1,4 @@
-package me.loda.spring.testinginspringboot;
+package jackcode.spring.testinginspringboot;
 /*******************************************************
  * For Vietnamese readers:
  *    Các bạn thân mến, mình rất vui nếu project này giúp 

@@ -309,6 +309,9 @@ package me.loda.spring.testinginspringboot;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import jackcode.spring.testinginspringboot.Todo;
+import jackcode.spring.testinginspringboot.TodoRepository;
+import jackcode.spring.testinginspringboot.TodoService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -330,13 +333,13 @@ public class TodoServiceTest2 {
      * Tiết kiệm thời gian hơn khi sử dụng @SpringBootTest (vì phải load hết Bean lên mà không dùng đến)
      */
     @TestConfiguration
-    public static class TodoServiceTest2Configuration{
+    public static class TodoServiceTest2Configuration {
 
         /*
         Tạo ra trong Context một Bean TodoService
          */
         @Bean
-        TodoService todoService(){
+        TodoService todoService() {
             return new TodoService();
         }
     }
@@ -350,9 +353,9 @@ public class TodoServiceTest2 {
     @Before
     public void setUp() {
         Mockito.when(todoRepository.findAll())
-               .thenReturn(IntStream.range(0, 10)
-                                    .mapToObj(i -> new Todo(i, "title-" + i, "detail-" + i))
-                                    .collect(Collectors.toList()));
+                .thenReturn(IntStream.range(0, 10)
+                        .mapToObj(i -> new Todo(i, "title-" + i, "detail-" + i))
+                        .collect(Collectors.toList()));
 
 
     }
